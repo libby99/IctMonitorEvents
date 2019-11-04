@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { EventsqueryService } from '../services/eventsquery.service';
-import { EventsparserService } from '../services/eventsparser.service';
+import { EventStr, EventsparserService } from '../services/eventsparser.service';
 
 @Component({
   selector: 'app-events',
@@ -13,7 +13,8 @@ export class EventsComponent implements OnInit {
   timer;
   servertype = 1;
   hasEvent: boolean = true;
-  events = [];
+//  events = [];
+  events: EventStr[] = [];
 
   constructor(public authService: AuthService, public queryService: EventsqueryService, public parserService: EventsparserService,) {
   }
