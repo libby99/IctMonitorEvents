@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
 
-declare const getPosition: any;
-declare const convertToObject: any;
-declare const specialChars: any;
-declare const displayDateTime: any;
-declare const decryptAES: any;
+declare const [
+    getPosition,
+    convertToObject,
+    specialChars,
+    displayDateTime,
+    decryptAES
+];
 
 export class EventStr {
   constructor(public description: string, public time: string) { }
